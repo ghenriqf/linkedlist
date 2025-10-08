@@ -106,7 +106,6 @@ int main() {
 
     // exibindo lista depois de limpar memoria
     lista.exibir(lista.head);
-    cout << endl;
 
     return 0;
 }
