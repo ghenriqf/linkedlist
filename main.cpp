@@ -81,24 +81,22 @@ struct ListaInteiro {
 int main() {
     ListaInteiro lista;
 
-    cout << "inserindo no final:" << endl;
+    // inserindo na lista
     lista.inserirFinal(8, lista.head);
     lista.inserirFinal(12, lista.head);
     lista.inserirFinal(90, lista.head);
     lista.exibir(lista.head);
     cout << endl;
 
-    cout << "inserindo em posicao:" << endl;
+    // inserindo em posicao
     lista.inserirPosicao(2, 1, lista.head);
-    lista.exibir(lista.head);
-    cout << endl;
 
-    cout << "removendo por posicao:" << endl;
+    // removendo por posicao
     lista.removerPosicao(2, lista.head);
     lista.exibir(lista.head);
     cout << endl;
 
-    cout << "exibindo lista inversa:" << endl;
+    // exibindo lista invertida
     lista.exibirInverso(lista.head);
     cout << endl;
 
@@ -106,7 +104,7 @@ int main() {
     lista.head = nullptr;
     lista.tamanho = 0;
 
-    cout << "lista depois de lipar memoria: ";
+    // exibindo lista depois de limpar memoria
     lista.exibir(lista.head);
     cout << endl;
 
